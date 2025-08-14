@@ -12,7 +12,9 @@ export class OrdersService extends PrismaClient implements OnModuleInit {
   }
 
   create(createOrderDto: CreateOrderDto) {
-    return `This action adds a new order: ${JSON.stringify(createOrderDto)}`
+    return this.order.create({
+      data: createOrderDto,
+    })
   }
 
   findAll() {
