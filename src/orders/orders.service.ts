@@ -154,7 +154,7 @@ export class OrdersService extends PrismaClient implements OnModuleInit {
         name: products.find((product) => product.id === orderItem.productId)
           .name,
       })),
-    }tails
+    }
   }
 
   async changeStatus(changeOrderStatusDto: ChangeOrderStatusDto) {
