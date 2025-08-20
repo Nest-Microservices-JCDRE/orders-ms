@@ -15,3 +15,5 @@ PRODUCT_MICROSERVICE_PORT=
 # one found in a remote Prisma Postgres URL, does not contain any sensitive information.
 
 DATABASE_URL="postgresql://postgres:123456@localhost:5432/ordersdb?schema=public"
+
+NATS_SERVERS="nats://localhost:4222"
